@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Smart Grouping</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale = 1" >
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+    <link rel="stylesheet" href="main.css">
+    
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        .form-inline {  
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+        }
+        
+        .form-inline label {
+          margin: 5px 10px 5px 0;
+        }
+        
+        .form-inline input {
+          vertical-align: middle;
+          margin: 5px 10px 5px 0;
+          padding: 10px;
+          background-color: #fff;
+          border: 1px solid #ddd;
+        }
+        
+        .form-inline button {
+          padding: 10px 20px;
+          background-color: dodgerblue;
+          border: 1px solid #ddd;
+          color: white;
+          cursor: pointer;
+        }
+        
+        .form-inline button:hover {
+          background-color: royalblue;
+        }
+        
+        @media (max-width: 800px) {
+          .form-inline input {
+            margin: 10px 0;
+          }
+          
+          .form-inline {
+            flex-direction: column;
+            align-items: stretch;
+          }
+        }
+        </style>
+
+</head>
+<body style="background-color:darkslategrey">
+<nav class=" navbar navbar-inverse navbar-fixed-top"  >
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="glyphicon glyphicon-menu-hamburger" style="color: #FFF"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img style="max-height: 35px" src="img/hci_logo.png">
+			</a>
+		</div>	
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right text-center">
+				<li class="active"><a href="index.html"></i>LOGIN PAGE</a></li>	
+				<li><a href="aboutuslogin.html">ABOUT US</a></li>
+			</ul>
+		</div>
+	</div>	
+</nav>
+
+<br>
+<br>
+<br>
+
+<div class="container-fluid">
+	<body>
+        <h2><b>Hello Professors,</b></h2>
+		<h2><b>Welcome to Smart Grouping!</b></h2>
+		<p>Please enter your email id and password to validate yourself as a Professor.</p>
+        <p>You can press 'Remember me' checkbox to never type your email and password again!</p>
+        <p>After entering email id and password, press Submit button to enter Smart Grouping.</p>
+
+        <br>
+		
+		<form class="form-inline" action="homeprof.html">
+		  <label for="email">Email:</label>
+		  <input type="email" id="email" placeholder="Enter email" name="email" required>
+		  <label for="pwd">Password:</label>
+		  <input type="password" id="pwd" placeholder="Enter password" name="pswd" required>
+		  <label>
+			<input type="checkbox" name="remember"> Remember me
+		  </label>
+          <button type="submit" >Submit</button>
+        </form>
+        <br>
+        <br>
+        <label>
+            <a href = "loginstud.html">If you are Student, Please click here to Login.</a>
+        </label>
+		
+		</body>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<section class="container">
+	
+	<article id="about" >
+		<div class="row" style="padding: 100px 0px">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-15">
+				
+					<p>
+					<b><p></p></b>
+								  
+
+					</p>
+				</div>
+			</div>
+		<div class="col-sm-2"></div>
+	</div>
+	</article>
+
+</section>
+
+
+<footer>
+	<nav class=" navbar navbar-inverse " >
+		<div class="container">
+		    <div class="row">
+		        <div class="col-sm-12">
+		            <p></p>
+		            <p style="color: #fff;" class="text-center">&copy; Smart Grouping 2020</p> 
+		        </div>
+		    </div>
+	    </div>
+	</nav>
+</footer>
+
+</body>
+</html>
